@@ -6,7 +6,7 @@ on:
   workflow_dispatch: # 手动触发
     inputs:
       group:
-        description: '分组名称'
+        description: '分组名称(天选时刻)'
         required: true
       count:
         description: '目标取关个数（-1表示全部）'
