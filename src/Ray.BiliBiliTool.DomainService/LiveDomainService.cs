@@ -243,7 +243,7 @@ namespace Ray.BiliBiliTool.DomainService
             }
             catch (Exception ex)
             {
-                _logger.LogWarning("【异常】{msg}，{detail}" + Environment.NewLine, ex.Message, ex);
+                _logger.LogWarning("【抽奖】失败 {title} {msg}", target?.Title, ex.Message);
                 //ignore
             }
         }
