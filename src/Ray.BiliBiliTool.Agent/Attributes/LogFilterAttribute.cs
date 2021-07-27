@@ -40,9 +40,10 @@ namespace Ray.BiliBiliTool.Agent.Attributes
             else
             {
                 if (_logError)
-                    logger.LogError(logMessage.ToString());
+                    //logger.LogError(logMessage.ToString());
+                    logger.LogError(logMessage.ToIndentedString(2));
                 else
-                    logger.LogDebug(logMessage.ToString());
+                    logger.LogDebug(logMessage.ToIndentedString(2));
             }
 
             return Task.CompletedTask;
