@@ -13,7 +13,7 @@ namespace Ray.BiliBiliTool.Agent.BiliBiliAgent.Interfaces
 
     [AppendHeader("Connection", "keep-alive", AppendHeaderType.AddIfNotExist)]
 
-    [LogFilter]
+    [LogFilter(logError:false)]
     public interface IBiliBiliApi
     {
     }
